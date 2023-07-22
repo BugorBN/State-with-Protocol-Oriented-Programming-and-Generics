@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Debug Desktop",
+            "program": "${workspaceFolder:Desktop}/.build/debug/Desktop",
+            "args": [],
+            "cwd": "${workspaceFolder:Desktop}",
+            "preLaunchTask": "swift: Build Debug Desktop"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Release Desktop",
+            "program": "${workspaceFolder:Desktop}/.build/release/Desktop",
+            "args": [],
+            "cwd": "${workspaceFolder:Desktop}",
+            "preLaunchTask": "swift: Build Release Desktop"
+        }
+    ]
+}
